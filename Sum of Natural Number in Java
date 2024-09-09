@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class SumOfNaturalNumbers {
+    public static void main(String []args)
+    {
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Enter Range to find sum:");
+        int n1=scan.nextInt();
+        int n2=scan.nextInt();
+        int count=0;
+        for(int i=n1;i<=n2;i++)
+        {
+            count=count+i;
+        }
+        System.out.println("Sum is: "+count);
+
+    }
+    
+}
