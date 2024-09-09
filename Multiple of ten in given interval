@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class MultipleOfTenInGivenInterval{
+    public static void main(String []args)
+    {
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Enter Range to find sum:");
+        int n1=scan.nextInt();
+        int n2=scan.nextInt();
+        for(int i=n1;i<=n2;i++)
+        {
+            if(i%10==0)
+            {
+                System.out.print(" "+i+" ");
+            }
+        }
+    }
+}
