@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class SwappingOfTwoNumbers {
+    public static void main(String []args)
+    {
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Enter two numbersL:");
+        int n1=scan.nextInt();
+        int n2=scan.nextInt();
+        int n3;
+        n3=n1;
+        n1=n2;
+        n2=n3;
+        System.out.println("Value of n1 is:"+n1);
+        System.out.println("Value of n2 is :"+n2);
+
+    }
+    
+}
