@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Divisible  {
+    public static void main(String []args)
+    {
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Enter number to be divided:");
+        int n1=scan.nextInt();
+        System.out.println("Enter number with which you want division:");
+        int n2=scan.nextInt();
+        if(n1%n2==0)
+        {
+            System.out.println("Number is divisible");
+        }
+        else{
+            System.out.println("Number is not divisible");
+        }
+    }
+    
+}
