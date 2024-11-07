@@ -1,0 +1,44 @@
+import java.util.Scanner;
+class marks{
+    int p , c , m , total;
+    void setmarks( int physics , int chem, int math, int t){
+        p = physics;
+        c = chem;
+        m = math;
+        total = t;
+    }
+
+     String getMarks(){
+        if((p>=50)&&(c>=40)&&(m>=60)&&(total>=200)){
+            return "Eligible";
+        }
+        else if ((m+p>=150)){
+            return "Eligible";
+        }
+        else{
+            return "Not Eligible";
+        }
+
+    }
+ }
+
+public class eligibilty {
+    @SuppressWarnings("resource")
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter physics marks");
+        int p1 = sc.nextInt();
+        System.out.println("Enter chemistry marks");
+        int c1 = sc.nextInt();
+        System.out.println("Enter math marks");
+        int m1 = sc.nextInt();
+        System.out.println("Enter total marks");
+        int t1 = sc.nextInt();
+
+        marks m2 = new marks();
+        m2.setmarks(p1,c1,m1,t1);
+        m2.getMarks();
+
+
+    }
+}
