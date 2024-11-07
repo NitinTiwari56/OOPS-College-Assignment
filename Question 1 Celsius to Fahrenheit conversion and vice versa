@@ -1,0 +1,35 @@
+import java.util.Scanner ;
+class convertor{
+    float f;
+    float c ;
+   float conf( float fa , float ce){
+        f = fa ;
+        c = ce;
+        f = (c*(9/5))+32;
+        return f;
+
+    }
+    float conc(float fa , float ce){
+        f = fa ;
+        c = ce;
+        c = (f-32)*(5/9);
+        return c;
+    }
+}
+public class tempConv {
+    @SuppressWarnings("resource")
+    public static void main(String[] args) {
+       convertor c1 = new convertor();
+       Scanner sc =  new Scanner(System.in);
+       System.out.println("Enter the temp in faranheit");
+        float f1 = sc.nextFloat();
+       System.out.println("Enter the temp in celcius");
+       float c2= sc.nextFloat();
+       System.out.println("The temp convertor is :");
+       c1.conc(f1,c2);
+       c1.conf(f1,c2);
+
+       
+
+        }
+    }
